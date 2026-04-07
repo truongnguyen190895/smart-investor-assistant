@@ -1,0 +1,52 @@
+# --- System Files ---
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# --- Node.js / Frontend ---
+node_modules/
+dist/
+build/
+.next/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- Environment & Secrets (QUAN TRỌNG) ---
+# Tuyệt đối không đẩy file này lên GitHub vì chứa API Key chứng khoán và AI
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# --- Python / AI Engineering ---
+# Nếu bạn dùng Python để crawl hoặc xử lý dữ liệu AI
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.ipynb_checkpoints/
+
+# --- Database & Storage ---
+# Tránh đẩy dữ liệu local của Postgres hoặc Vector DB lên
+.data/
+pgdata/
+*.sqlite
+*.db
+
+# --- Tools & IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Docker ---
+.docker/
